@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Sedano| Dev Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+ 
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+ 
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="bracket">[</span>GABRIEL SEDANO<span class="bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio" class="nav-link" data-text="INICIO">INICIO</a></li>
+      <li><a href="#sobre-mi" class="nav-link" data-text="PERFIL">PERFIL</a></li>
+      <li><a href="#habilidades" class="nav-link" data-text="SKILLS">SKILLS</a></li>
+      <li><a href="#contacto" class="nav-link" data-text="CONTACTO">CONTACTO</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        DISPONIBLE PARA PROYECTOS
+      </div>
+      <div class="glitch-wrapper">
+        <h1 class="glitch" data-text="GABRIEL">GABRIEL SEDANO</h1>
+      </div>
+      <div class="typewriter-container">
+        <span class="prefix">&gt; </span>
+        <span id="typewriter" class="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Estudiante apasionado construyendo el futuro digital,<br>
+        una línea de código a la vez.
+      </p>
+      <div class="hero-cta">
+        <a href="#sobre-mi" class="btn-primary">
+          <span class="btn-text">EXPLORAR</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#contacto" class="btn-secondary">CONTACTAR</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">Tecnologías</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span>
+          <span class="stat-label">% Dedicación</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-core">
+          <span class="avatar-initial">G</span>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-dot"></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot dot-cyan"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="section sobre-mi">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">SOBRE MÍ</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-text reveal">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="t-title">gabriel.json</span>
+          </div>
+          <div class="terminal-body">
+            <pre class="code-block"><span class="c-bracket">{</span>
+  <span class="c-key">"nombre"</span>: <span class="c-string">"Gabriel"</span>,
+  <span class="c-key">"rol"</span>: <span class="c-string">"Dev en formación"</span>,
+  <span class="c-key">"ubicacion"</span>: <span class="c-string">"Perú 🇵🇪"</span>,
+  <span class="c-key">"github"</span>: <span class="c-string">"@runner349"</span>,
+  <span class="c-key">"objetivo"</span>: <span class="c-string">"Full Stack Dev"</span>,
+  <span class="c-key">"pasion"</span>: <span class="c-string">"Crear cosas increíbles"</span>,
+  <span class="c-key">"disponible"</span>: <span class="c-bool">true</span>
+<span class="c-bracket">}</span></pre>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-cards reveal">
+        <div class="info-card">
+          <div class="card-icon">⚡</div>
+          <h3>Aprendizaje continuo</h3>
+          <p>Siempre explorando nuevas tecnologías y metodologías para crecer como desarrollador.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🚀</div>
+          <h3>Orientado a resultados</h3>
+          <p>Me enfoco en entregar código limpio, funcional y con impacto real.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🔧</div>
+          <h3>Problem solver</h3>
+          <p>Me apasiona encontrar soluciones creativas a problemas complejos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="section habilidades">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">HABILIDADES</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-item reveal" data-level="85">
+        <div class="skill-header">
+          <span class="skill-name">HTML5</span>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--target: 85%"></div>
+        </div>
+      </div>
+      <div class="skill-item reveal" data-level="75">
+        <div class="skill-header">
+          <span class="skill-name">CSS3</span>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--target: 75%"></div>
+        </div>
+      </div>
+      <div class="skill-item reveal" data-level="60">
+        <div class="skill-header">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-percent">60%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--target: 60%"></div>
+        </div>
+      </div>
+      <div class="skill-item reveal" data-level="80">
+        <div class="skill-header">
+          <span class="skill-name">Git & GitHub</span>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--target: 80%"></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="tech-badges reveal">
+      <div class="tech-badge">
+        <span class="badge-icon">&#60;/&#62;</span>
+        <span>HTML</span>
+      </div>
+      <div class="tech-badge">
+        <span class="badge-icon">#</span>
+        <span>CSS</span>
+      </div>
+      <div class="tech-badge">
+        <span class="badge-icon">JS</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="tech-badge">
+        <span class="badge-icon">⌥</span>
+        <span>Git</span>
+      </div>
+      <div class="tech-badge">
+        <span class="badge-icon">◈</span>
+        <span>GitHub</span>
+      </div>
+      <div class="tech-badge">
+        <span class="badge-icon">▣</span>
+        <span>VSCode</span>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contacto">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">CONTACTO</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-content reveal">
+      <p class="contact-text">¿Tienes un proyecto en mente? Conectemos y construyamos algo increíble.</p>
+      <div class="contact-links">
+        <a href="https://github.com/runner349" class="contact-btn" target="_blank">
+          <span class="contact-icon">◈</span>
+          <span>GitHub / runner349</span>
+        </a>
+        <div class="contact-btn">
+          <span class="contact-icon">@</span>
+          <span>gabriel@email.com</span>
+        </div>
+        <div class="contact-btn">
+          <span class="contact-icon">◉</span>
+          <span>Perú, Lima</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <p><span class="bracket">[</span> Hecho con <span class="neon">pasión</span> por Gabriel <span class="bracket">]</span></p>
+    <p class="footer-sub">@runner349 · 2025</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
